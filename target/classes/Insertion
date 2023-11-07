@@ -1,0 +1,28 @@
+-- Insérer des exemples de formations dans la table Formation
+INSERT INTO Formation (idFormation, nomFormation, promotion)
+VALUES
+  (1, 'MIAGE-IF', 'Initiale'),          -- Exemple 1
+  (2, 'MIAGE-SITN', 'En Alternance'),   -- Exemple 2
+  (3, 'ID', 'Formation Continue');      -- Exemple 3
+
+-- Insérer des exemples d'étudiants dans la table Etudiant
+INSERT INTO Etudiant (idEtudiant, nom, prenom, idFormation)
+VALUES
+  (1, 'Dupont', 'Jean', 1),  -- Exemple 1
+  (2, 'Martin', 'Sophie', 2), -- Exemple 2
+  (3, 'Lefebvre', 'Pierre', 3), -- Exemple 3
+  (4, 'Dubois', 'Isabelle', 1), -- Exemple 4
+  (5, 'Girard', 'Thomas', 3),  -- Exemple 5
+  (6, 'Leroy', 'Marie', 2),    -- Exemple 6
+  (7, 'Moreau', 'Paul', 1),    -- Exemple 7
+  (8, 'Bouvier', 'Laure', 2),  -- Exemple 8
+  (9, 'Richard', 'Luc', 1),    -- Exemple 9
+  (10, 'Petit', 'Anne', 3);   -- Exemple 10
+
+  -- Insérer des exemples de projets dans la table Projet
+INSERT INTO Projet (idProjet, nomMatiere, sujet, dateRemisePrevue)
+VALUES
+  (1, 'Mathématiques Avancées', 'Analyse des théorèmes de Gödel', '2023-12-15'),  -- Exemple 1
+  (2, 'Informatique Graphique', 'Conception d'un moteur de rendu 3D', '2023-12-10'),  -- Exemple 2
+  (3, 'Physique Quantique', 'Étude des intrication quantiques', '2023-12-20');  -- Exemple 3
+  
